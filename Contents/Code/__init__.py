@@ -1,7 +1,7 @@
 ####################################################################################################
 # CityLine
 #
-# This Plex Channel allows users to watch videos from the Cityline website.
+# This Plex Channel allows users to watch videos from the CityLine website.
 #
 ####################################################################################################
 
@@ -66,7 +66,7 @@ def MainMenu():
 
     for section in json_obj:
         category_name = section['name'].replace('&amp;', '&')
-        oc.add(DirectoryObject(key=Callback(LoadCategory, title=section['name'], cat_id=section['id']), title=category_name))
+        oc.add(DirectoryObject(key=Callback(LoadCategory, title=category_name, cat_id=section['id']), title=category_name))
 
     return oc
 
