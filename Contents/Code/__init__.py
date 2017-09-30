@@ -13,8 +13,8 @@ NAME     = 'CityLine'
 ART      = 'art-default.jpg'
 ICON     = 'icon-default.png'
 
-VIDEO_PAGE = 'http://www.cityline.ca/video'
-SECTIONS_URL = 'http://www.cityline.ca/wp-json/rdm-video-cloud/video/sections'
+VIDEO_PAGE = 'http://www.cityline.tv/video'
+SECTIONS_URL = 'http://www.cityline.tv/wp-json/rdm-video-cloud/video/sections'
 
 HTTP_HEADERS = {
     'User-Agent': 'ABC/5.0.3(iPad4,4; cpu iPhone OS 9_3_4 like mac os x; en-nl) CFNetwork/758.5.3 Darwin/15.6.0',
@@ -80,7 +80,7 @@ def LoadCategory(title, cat_id):
 
     #Example category JSON call:
     #http://www.cityline.ca/wp-json/rdm-video-cloud/video/section?_ajax_nonce=4b25545a16&_wpnonce=58c709b9e1&id=full-episodes&var=category&order=1
-    section_url = "http://www.cityline.ca/wp-json/rdm-video-cloud/video/section?_ajax_nonce=%s&_wpnonce=%s&id=%s&var=category&order=1" % (AJAX_NONCE, WP_NONCE, cat_id)
+    section_url = "http://www.cityline.tv/wp-json/rdm-video-cloud/video/section?_ajax_nonce=%s&_wpnonce=%s&id=%s&var=category&order=1" % (AJAX_NONCE, WP_NONCE, cat_id)
 
     #Grab videos for the category just called
     try:
